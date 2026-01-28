@@ -7,7 +7,7 @@ import java.util.List;
 
 public interface LocationDao {
     @Insert
-    void insert(LocationEntitity le);
-    @Query("SELECT * FROM locations ORDER BY id DESC")
-    List<LocationEntitity> getAllLocations();
+    void insert(LocationEntity le);
+    @Query("SELECT * FROM LocationEntity ORDER BY id DESC")
+    List<LocationEntity> getAllLocations();
 }
